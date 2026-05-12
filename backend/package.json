@@ -3,6 +3,13 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun run index.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "typecheck": "bunx tsc --noEmit"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/pg": "^8.20.0",
